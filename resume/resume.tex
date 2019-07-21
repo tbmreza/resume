@@ -1,0 +1,200 @@
+% LaTeX code generated at [resumake.io](https://resumake.io)
+
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[margin=1in]{geometry}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Large \scshape {Tubagus Muhammad Reza Handzalah}}\\
+	rezahandzalah@gmail.com $\cdot$ +6281312646370 $\cdot$ https://tbmreza.github.io/hello\\
+\end{center}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{PT Telekomunikasi Indonesia}\hfill Jan 2019 | Jun 2019\\
+\textit{as Data Scientist Intern @ Divisi Digital Service}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Contributed to computer vision projects such as Document Recognition with OCR.
+	\item The project does the OCR computation in Google Cloud Platform. My contribution was developing the system's command line interface application for integration with Telkom's existing recruitment website.
+\end{itemize}
+\vspace{1mm}
+
+\textbf{Optical Communication System Lab}\hfill Aug 2017 | Aug 2018\\
+\textit{as Research Assistant Coordinator} \\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+  \item Organized FTTH Drafter Training, paid optical communication system training event with 30 participants (mostly final-year undergraduate students).
+  \item Competed in Ristekdikti PKM. My team managed to get 2 proposals accepted.
+  
+\end{itemize}
+\vspace{1mm}
+
+\textbf{PT Radar Telekomunikasi Indonesia} \hfill Apr 2018 | Jun 2018\\
+\textit{as Intern}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item GUI project (Microsoft Visual Studio) for radar antenna motor.
+  
+\end{itemize}
+
+%==== Projects ====%
+\header{Projects}
+{\textbf{xls2json}} \hfill {\sl Python}\\pypi.org/project/xls2json/\\
+
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Command line interface tool to convert XLS file to JSON.  
+\end{itemize}
+
+\vspace*{2mm}
+
+{\textbf{Grab Computer Vision Challenge}} \hfill {\sl Python}\\github.com/tbmreza/grab-computer-vision-challenge\\
+
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Explored the effect of background removal as image classification pre-processing.
+	\item Dataset: Stanford Car (over 16000 images). Architecture: EfficientNet.
+  
+\end{itemize}
+
+\vspace*{2mm}
+
+{\textbf{PixelAdder: Image Restoration based on
+}} \hfill {\sl Python, Matlab}\\
+{\textbf{Convolutional Neural Network for Intelligent Surveillance Camera}}
+
+
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Gemastik 2018 participant team member.
+  \item Built a CNN that maps less recognizable 8x8 pixel face image to 32x32.
+  
+  
+\end{itemize}
+
+
+\vspace*{2mm}
+
+{\textbf{Computer Vision Course Final Project}} \hfill {\sl Matlab}\\
+
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Matlab GUI development to demonstrate a given paper.
+  \item Paper title: Single-Image Super-Resolution Based on Rational Fractal Interpolation.
+  
+\end{itemize}
+
+
+
+\vspace*{2mm}
+
+%==== Education ====%
+\header{Education}
+\textbf{Telkom University}\hfill Aug 2015 | Apr 2019\\
+Sarjana Teknik Telekomunikasi\\
+
+
+\begin{tabular}{ l l }
+	thesis:       & \textit{Design of WDM VLC in FTTH Network}\\
+	publication:  & ejournal.itn.ac.id/index.php/seniati/article/view/2309\\
+  GPA:          & 3.65/4.00\\ 
+  honor:        & Cum Laude\\
+\end{tabular}
+\vspace{2mm}
+
+%==== Skills ====%
+\header{Skills}
+\begin{tabular}{ l l }
+	languages:  & Python, JavaScript\\
+  tools:      & Ubuntu, Jupyter, Git, \LaTeX\\        
+  general:    & Optical Communication System, Computer Vision, Software Engineering\\                   
+\end{tabular}
+\vspace{2mm}
+
+\header{Online Certifications}
+\textbf{JavaScript Algorithms and Data Structures} \hfill freeCodeCamp\\
+freecodecamp.org/certification/tbmreza/javascript-algorithms-and-data-structures\\
+\vspace*{2mm}
+\textbf{Data Science on the Google Cloud
+Platform} \hfill Qwiklabs\\
+\textbf{Baseline: Data, ML, AI}\\
+qwiklabs.com/public\_profiles/a52e3f27-2aaa-405a-bdd4-8bd2c6c2a89b\\
+
+
+\vspace*{2mm}
+
+\ 
+\end{document}
