@@ -1,0 +1,186 @@
+% LaTeX boilerplates from [resumake.io](https://resumake.io)
+
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[margin=1in]{geometry}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Large \scshape {Tubagus Muhammad Reza Handzalah}}\\
+	rezahandzalah@protonmail.com $\cdot$ +6281312646370 $\cdot$ linkedin.com/in/reza-handzalah\\
+\end{center}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{IDEMIA}\hfill Aug 2019 | present\\
+\textit{as Software Engineer @ Card Personalization System (CPS), Jakarta Office}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Develops and tests CPS Mobile Card Configurator graphical user interface legacy application.
+\end{itemize}
+\vspace{1mm}
+
+\textbf{PT Telekomunikasi Indonesia}\hfill Jan 2019 | Jun 2019\\
+\textit{as Data Scientist Intern @ Divisi Digital Service}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Assigned to GCP Document Recognition project. 
+    \item My contribution was developing the system's command line interface application.
+\end{itemize}
+\vspace{1mm}
+
+
+
+\textbf{PT Radar Telekomunikasi Indonesia (RTI)} \hfill Apr 2018 | Jun 2018\\
+\textit{as Intern}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item GUI project (Microsoft Visual Studio C\#) for radar antenna motor.
+  
+\end{itemize}
+
+\textbf{Optical Communication System Lab}\hfill Aug 2017 | Aug 2018\\
+\textit{as Research Assistant Coordinator (undergraduate)} \\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+  \item Organized FTTH Drafter Training, paid optical communication system training event with 30 participants (mostly final-year undergraduate students).
+  \item Competed in Ristekdikti PKM. My team managed to get 2 proposals accepted.
+  
+\end{itemize}
+
+
+%==== Projects ====%
+\header{Projects}
+
+{\textbf{tapol.org Responsive Design}} \hfill {\sl html, css}\\https://tapol-org-clone.now.sh/\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Recreated tapol.org website and made it responsive. Desktop-first design.
+\end{itemize}
+
+\vspace*{2mm}
+{\textbf{gojek.com Website Clone}} \hfill {\sl html, css, js (svelte)}\\https://gojek-com-clone.now.sh/\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Assembled image and font assets of www.gojek.com to recreate the original.
+    \item Blog post: 2 Tiny Improvement Ideas for gojek.com Website
+\end{itemize}
+
+\vspace*{2mm}
+{\textbf{Grid Collage Maker}} \hfill {\sl js (nativescript)}\\link/to/apk\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Quickly make collages in your phone.
+\end{itemize}
+
+\vspace*{2mm}
+
+{\textbf{xls2json}} \hfill {\sl python}\\https://pypi.org/project/xls2json/\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Command line interface tool to convert XLS file to JSON.  
+	\item Made for a one-off task during internship. Isn't properly tested.
+\end{itemize}
+\vspace*{2mm}
+{\textbf{Currently working on: rlox}} \hfill {\sl rust}\\link/to/repository\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Following along Crafting Interpreters book. Practically translating Java code to Rust.
+\end{itemize}
+
+%==== Education ====%
+\header{Education}
+\textbf{Telkom University, Sarjana Teknik Telekomunikasi}\hfill Aug 2015 | Apr 2019\\
+
+
+\begin{tabular}{ l l }
+  thesis:       & \textit{Design of WDM VLC in FTTH Network}\\
+  publication:  & ejournal.itn.ac.id/index.php/seniati/issue/view/96\\
+  GPA:          & 3.65/4.00\\ 
+  honor:        & Cum Laude\\
+\end{tabular}
+\vspace{2mm}
+
+%==== Skills ====%
+\header{Familiar}
+\begin{tabular}{ l l }
+  languages: & python, javascript, rust\\
+  tools: & ubuntu, git, npm\\        
+  general: & Optical Communication System, Computer Vision, Web Development, Software Testing, \\
+  & Agile Methodologies\\                   
+\end{tabular}
+\vspace{2mm}
+
+\ 
+\end{document}
